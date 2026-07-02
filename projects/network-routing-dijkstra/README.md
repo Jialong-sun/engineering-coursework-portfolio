@@ -2,6 +2,8 @@
 
 This mini-project implements Dijkstra shortest-path routing on a weighted graph, using a small wireless-sensor-network-style topology as the default example.
 
+It is a public portfolio extension of documented WSN graph/topology coursework. It complements the directly rewritten MST project; it should not be read as a separate raw Dijkstra assignment upload.
+
 ## What This Demonstrates
 
 - Shortest-path routing fundamentals
@@ -31,4 +33,4 @@ python tests/test_dijkstra_routing.py
 
 ## Portfolio Notes
 
-This project is adapted from wireless sensor network coursework and rewritten into a reusable routing module. It complements the MST topology project by showing a second graph-algorithm workflow: shortest-path routing rather than topology reduction.
+This project is an original extension from the wireless-sensor-network graph theme and rewritten into a reusable routing module. It complements the MST topology project by showing a second graph-algorithm workflow: shortest-path routing rather than topology reduction.

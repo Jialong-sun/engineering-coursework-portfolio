@@ -8,11 +8,15 @@ This repository is intentionally **not** a raw homework archive. It keeps only p
 
 Raw documents containing student IDs, classmates' names, course handouts, personal files, screenshots with private data, or assignment-only wording have been excluded.
 
+## Evidence Discipline
+
+Every public project is tied back to coursework, internship, research, thesis, or training material that was reviewed locally before publication. Some projects are direct rewrites of existing code, while others are public-safe extensions built from documented topics. The evidence boundary is recorded in [`docs/evidence-map.md`](docs/evidence-map.md).
+
 ## Engineering Signals
 
 - CI workflow under `.github/workflows/ci.yml` checks the Python simulations/calculators, Java project, and FPGA-interface reference models.
 - Python project includes a deterministic smoke test for graph generation and MST behavior.
-- Dijkstra routing project includes shortest-path tests for reachable, unreachable, and invalid-weight cases.
+- Dijkstra routing project is a public extension of the WSN graph-algorithm theme and includes shortest-path tests for reachable, unreachable, and invalid-weight cases.
 - Signal/Fourier, optical-link, analog-filter, thermal-control, and spectrum-allocation projects include deterministic engineering-unit tests.
 - FPGA digital-interface project includes Verilog modules plus Python behavioral checks for edge detection, display scanning, and ADC0809-style timing.
 - Java project includes Maven/JUnit tests for CSV loading and sample-data validation.
@@ -33,13 +37,13 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 |---|---|---|
 | `java-student-grade-manager` | Java Swing, file parsing, GUI table query, statistics | Demonstrates object-oriented programming, desktop UI, data loading, sorting, and basic software architecture. |
 | `wireless-sensor-network-mst` | Python, NetworkX, random graph generation, minimum spanning tree | Demonstrates wireless sensor network topology modeling, graph algorithms, parameterized experiments, and visualization. |
-| `network-routing-dijkstra` | Python, Dijkstra, priority queue, shortest-path routing | Demonstrates routing-oriented graph algorithms for sensor-network-style weighted topologies. |
+| `network-routing-dijkstra` | Python, Dijkstra, priority queue, shortest-path routing | Public extension of the WSN graph-algorithm theme, showing shortest-path routing in weighted sensor-style topologies. |
 | `signal-fourier-lab` | Python, DFT, LTI convolution, moving-average filtering | Demonstrates DSP fundamentals without relying on black-box libraries. |
 | `optical-fiber-link-budget` | Python, dB/dBm, fiber attenuation, FBG wavelength shift | Demonstrates optical communication link budgeting and sensing-model intuition. |
-| `analog-rc-filter-tool` | Python, RC cutoff, low/high-pass frequency response | Demonstrates analog electronics modeling and engineering-unit calculation. |
-| `fpga-digital-interface-lab` | Verilog, digital interfaces, ADC0809-style FSM, seven-segment scan | Demonstrates internship-relevant RTL structure, timing awareness, and board-bring-up fundamentals. |
-| `thermal-control-fuzzy-pid` | Python, TEC plant model, fuzzy-style PID, saturation | Demonstrates hardware closed-loop control modeling related to receiver temperature stabilization. |
-| `ifrn-spectrum-allocation` | Python, M-cell network, reuse factor, SINR/fairness metrics | Demonstrates research-style communication-network simulation and trade-off analysis. |
+| `analog-rc-filter-tool` | Python, RC cutoff, low/high-pass frequency response | Public extension from analog-circuit coursework, showing circuit-level frequency-response modeling. |
+| `fpga-digital-interface-lab` | Verilog, digital interfaces, ADC0809-style FSM, seven-segment scan | Public-safe RTL practice grounded in internship notes on Verilog, LED timing, seven-segment scan, ADC0809, UART/IIC, Quartus, and ModelSim. |
+| `thermal-control-fuzzy-pid` | Python, TEC plant model, fuzzy-style PID, saturation | Public simulation derived from a thesis topic on receiver temperature stabilization with TEC and fuzzy PID control. |
+| `ifrn-spectrum-allocation` | Python, M-cell network, reuse factor, SINR/fairness metrics | Public Python remake of a documented 5G+/B5G frequency-allocation research topic around M-cell IFRN simulation. |
 | `coursework-notes` | Signal systems, optical communication, IoT, deep learning, analog circuits | Summarizes engineering foundations without exposing raw homework. |
 
 ## Repository Structure
@@ -58,6 +62,7 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 |   |-- ifrn-spectrum-allocation/
 |   `-- coursework-notes/
 |-- docs/
+|   |-- evidence-map.md
 |   |-- resume-github-blurb.md
 |   |-- github-upload-steps.md
 |   `-- portfolio-selection-notes.md

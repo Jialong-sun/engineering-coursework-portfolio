@@ -1,6 +1,6 @@
 # FPGA Digital Interface Lab
 
-Portfolio-safe FPGA/RTL practice inspired by communication-engineering internship work. The code is original and intentionally small: it demonstrates digital building blocks that often appear in entry-level FPGA board bring-up tasks without exposing any company-specific design.
+Portfolio-safe FPGA/RTL practice grounded in documented communication-engineering internship topics. The code is original and intentionally small: it demonstrates digital building blocks that often appear in entry-level FPGA board bring-up tasks without exposing any company-specific design.
 
 ## What Is Included
 
@@ -19,4 +19,4 @@ python tests/test_digital_models.py
 
 ## Portfolio Note
 
-This project supports FPGA / hardware-development applications by showing RTL structure, finite-state-machine thinking, peripheral timing awareness, and clean public documentation. It is not copied from any internship repository.
+This project supports FPGA / hardware-development applications by showing RTL structure, finite-state-machine thinking, peripheral timing awareness, and clean public documentation. The source evidence mentions Verilog HDL, LED timing, clock division, seven-segment dynamic scanning, ADC0809 timing/interface design, UART/IIC learning, Quartus II, and ModelSim. This repository contains only original public-safe practice code, not internship or company code.

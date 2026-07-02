@@ -2,6 +2,8 @@
 
 This mini-project models first-order RC low-pass and high-pass filters, turning analog-circuit coursework themes into a small frequency-response calculator.
 
+The checked coursework evidence is an analog electronics/radio-circuit design report rather than a raw RC-filter assignment. This calculator is therefore a public portfolio extension that demonstrates the same circuit-frequency-response fundamentals in a compact, testable form.
+
 ## What This Demonstrates
 
 - RC cutoff-frequency calculation
@@ -31,4 +33,4 @@ python tests/test_rc_filter.py
 
 ## Portfolio Notes
 
-This project is inspired by analog electronics and circuit-design coursework. It complements the digital/DSP projects by showing circuit-level modeling intuition.
+This project is inspired by analog electronics and circuit-design coursework. It complements the digital/DSP projects by showing circuit-level modeling intuition without publishing raw lab reports.
