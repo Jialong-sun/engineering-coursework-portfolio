@@ -49,6 +49,57 @@ jobs:
         working-directory: projects/network-routing-dijkstra
         run: python tests/test_dijkstra_routing.py
 
+  python-signal-fourier:
+    name: Python signal Fourier lab
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Fourier lab tests
+        working-directory: projects/signal-fourier-lab
+        run: python tests/test_fourier_lab.py
+
+  python-optical-fiber:
+    name: Python optical fiber model
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run optical fiber tests
+        working-directory: projects/optical-fiber-link-budget
+        run: python tests/test_fiber_budget.py
+
+  python-rc-filter:
+    name: Python analog RC filter
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run RC filter tests
+        working-directory: projects/analog-rc-filter-tool
+        run: python tests/test_rc_filter.py
+
   java-grade-manager:
     name: Java grade manager compile check
     runs-on: ubuntu-latest
