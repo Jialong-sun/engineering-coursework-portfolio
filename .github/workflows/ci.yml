@@ -100,6 +100,57 @@ jobs:
         working-directory: projects/analog-rc-filter-tool
         run: python tests/test_rc_filter.py
 
+  fpga-digital-interface:
+    name: FPGA digital interface reference checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run digital interface checks
+        working-directory: projects/fpga-digital-interface-lab
+        run: python tests/test_digital_models.py
+
+  python-thermal-control:
+    name: Python thermal control model
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run thermal control tests
+        working-directory: projects/thermal-control-fuzzy-pid
+        run: python tests/test_thermal_control.py
+
+  python-ifrn-spectrum:
+    name: Python IFRN spectrum allocation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run IFRN allocation tests
+        working-directory: projects/ifrn-spectrum-allocation
+        run: python tests/test_ifrn_allocator.py
+
   java-grade-manager:
     name: Java grade manager compile check
     runs-on: ubuntu-latest
