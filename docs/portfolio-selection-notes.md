@@ -5,6 +5,7 @@
 - Java GUI project, rewritten and anonymized.
 - WSN topology/MST simulation, refactored into a reusable Python script.
 - Dijkstra routing assignment, rewritten as a clean shortest-path module.
+- Signal/Fourier lab, optical-link model, and RC-filter calculator rewritten from coursework themes.
 - Engineering coursework summaries rewritten as portfolio notes.
 
 ## Excluded From Public Repo
