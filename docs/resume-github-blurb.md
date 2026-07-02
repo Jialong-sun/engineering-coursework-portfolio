@@ -9,7 +9,7 @@ GitHub: https://github.com/Jialong-sun/engineering-coursework-portfolio
 Or in the skills/project section:
 
 ```text
-GitHub作品集：整理并脱敏本科工程课程项目，包含 Java Swing 数据管理工具、无线传感网络拓扑/MST 仿真、Dijkstra 最短路由算法、通信/物联网/深度学习课程项目摘要，体现工程文档、代码规范与系统建模能力。
+GitHub作品集：整理并脱敏本科工程课程项目，包含 Java Swing 数据管理工具、WSN 拓扑/MST 与 Dijkstra 路由仿真、傅里叶/卷积 DSP 工具、光纤链路预算与 FBG 传感模型、RC 滤波器频响工具，体现工程文档、代码规范与系统建模能力。
 ```
 
 Recommended repository name:
