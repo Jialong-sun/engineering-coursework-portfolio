@@ -10,7 +10,7 @@ A small Java Swing desktop application for loading student score records, showin
 - Immutable domain object design
 - Basic input validation and malformed-row handling
 - Sorting and summary statistics
-- Basic desktop application packaging mindset
+- Maven-based build and JUnit test workflow
 
 ## Privacy Cleanup
 
@@ -21,17 +21,17 @@ The original coursework data contained real-looking names and student IDs. This 
 From this project directory:
 
 ```powershell
-javac -encoding UTF-8 -d out src/main/java/com/jialong/portfolio/grademanager/*.java
-java -cp out com.jialong.portfolio.grademanager.StudentSystem
+mvn test
+mvn -DskipTests package
+java -cp target/classes com.jialong.portfolio.grademanager.StudentSystem
 ```
 
 ## Test
 
-The project includes a non-GUI smoke test for CSV loading and sample-data validation:
+The project includes JUnit tests for CSV loading and sample-data validation:
 
 ```powershell
-javac -encoding UTF-8 -d out src/main/java/com/jialong/portfolio/grademanager/*.java src/test/java/com/jialong/portfolio/grademanager/*.java
-java -cp out com.jialong.portfolio.grademanager.CsvLoadSmokeTest
+mvn test
 ```
 
 ## Features
@@ -45,6 +45,6 @@ java -cp out com.jialong.portfolio.grademanager.CsvLoadSmokeTest
 ## Possible Improvements
 
 - Replace Swing with JavaFX or a web UI
-- Add unit tests for parsing and statistics
+- Add richer unit tests for statistics and UI-independent services
 - Add CSV import/export menu controls
 - Package as a runnable JAR
