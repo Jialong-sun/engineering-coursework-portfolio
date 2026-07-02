@@ -10,7 +10,8 @@ Raw documents containing student IDs, classmates' names, course handouts, person
 
 - CI workflow under `.github/workflows/ci.yml` checks the Python simulation and Java project.
 - Python project includes a deterministic smoke test for graph generation and MST behavior.
-- Java project includes a non-GUI smoke test for CSV loading and sample-data validation.
+- Dijkstra routing project includes shortest-path tests for reachable, unreachable, and invalid-weight cases.
+- Java project includes Maven/JUnit tests for CSV loading and sample-data validation.
 - Each project has its own README with run commands and portfolio notes.
 
 ## Recruiter Quick Scan
@@ -28,6 +29,7 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 |---|---|---|
 | `java-student-grade-manager` | Java Swing, file parsing, GUI table query, statistics | Demonstrates object-oriented programming, desktop UI, data loading, sorting, and basic software architecture. |
 | `wireless-sensor-network-mst` | Python, NetworkX, random graph generation, minimum spanning tree | Demonstrates wireless sensor network topology modeling, graph algorithms, parameterized experiments, and visualization. |
+| `network-routing-dijkstra` | Python, Dijkstra, priority queue, shortest-path routing | Demonstrates routing-oriented graph algorithms for sensor-network-style weighted topologies. |
 | `coursework-notes` | Signal systems, optical communication, IoT, deep learning, analog circuits | Summarizes engineering foundations without exposing raw homework. |
 
 ## Repository Structure
@@ -37,6 +39,7 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 |-- projects/
 |   |-- java-student-grade-manager/
 |   |-- wireless-sensor-network-mst/
+|   |-- network-routing-dijkstra/
 |   `-- coursework-notes/
 |-- docs/
 |   |-- resume-github-blurb.md
@@ -50,7 +53,7 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 ## Suggested Resume Line
 
 ```text
-GitHub: https://github.com/<your-username>/engineering-coursework-portfolio
+GitHub: https://github.com/Jialong-sun/engineering-coursework-portfolio
 ```
 
 ## Notes
