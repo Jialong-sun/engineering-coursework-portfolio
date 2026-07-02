@@ -1,5 +1,7 @@
 # Engineering Coursework Portfolio
 
+[![Portfolio CI](https://github.com/Jialong-sun/engineering-coursework-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Jialong-sun/engineering-coursework-portfolio/actions/workflows/ci.yml)
+
 Curated undergraduate engineering coursework and mini-projects by **Jialong Sun**.
 
 This repository is intentionally **not** a raw homework archive. It keeps only portfolio-friendly materials: runnable source code, anonymized sample data, concise documentation, and rewritten engineering notes.
