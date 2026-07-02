@@ -1,0 +1,53 @@
+name: Portfolio CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-wsn:
+    name: Python WSN simulation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: projects/wireless-sensor-network-mst
+        run: pip install -r requirements.txt
+
+      - name: Run unit-style smoke test
+        working-directory: projects/wireless-sensor-network-mst
+        run: python tests/test_wsn_mst.py
+
+      - name: Generate deterministic topology figure
+        working-directory: projects/wireless-sensor-network-mst
+        env:
+          MPLBACKEND: Agg
+        run: python src/wsn_mst.py --nodes 20 --seed 42 --output outputs/wsn_mst.png
+
+  java-grade-manager:
+    name: Java grade manager compile check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Compile and run smoke test
+        working-directory: projects/java-student-grade-manager
+        run: |
+          javac -encoding UTF-8 -d out src/main/java/com/jialong/portfolio/grademanager/*.java src/test/java/com/jialong/portfolio/grademanager/*.java
+          java -cp out com.jialong.portfolio.grademanager.CsvLoadSmokeTest
