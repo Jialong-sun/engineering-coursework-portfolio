@@ -8,9 +8,10 @@ Raw documents containing student IDs, classmates' names, course handouts, person
 
 ## Engineering Signals
 
-- CI workflow under `.github/workflows/ci.yml` checks the Python simulation and Java project.
+- CI workflow under `.github/workflows/ci.yml` checks the Python simulations/calculators and Java project.
 - Python project includes a deterministic smoke test for graph generation and MST behavior.
 - Dijkstra routing project includes shortest-path tests for reachable, unreachable, and invalid-weight cases.
+- Signal/Fourier, optical-link, and analog-filter projects include deterministic engineering-unit tests.
 - Java project includes Maven/JUnit tests for CSV loading and sample-data validation.
 - Each project has its own README with run commands and portfolio notes.
 
@@ -30,6 +31,9 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 | `java-student-grade-manager` | Java Swing, file parsing, GUI table query, statistics | Demonstrates object-oriented programming, desktop UI, data loading, sorting, and basic software architecture. |
 | `wireless-sensor-network-mst` | Python, NetworkX, random graph generation, minimum spanning tree | Demonstrates wireless sensor network topology modeling, graph algorithms, parameterized experiments, and visualization. |
 | `network-routing-dijkstra` | Python, Dijkstra, priority queue, shortest-path routing | Demonstrates routing-oriented graph algorithms for sensor-network-style weighted topologies. |
+| `signal-fourier-lab` | Python, DFT, LTI convolution, moving-average filtering | Demonstrates DSP fundamentals without relying on black-box libraries. |
+| `optical-fiber-link-budget` | Python, dB/dBm, fiber attenuation, FBG wavelength shift | Demonstrates optical communication link budgeting and sensing-model intuition. |
+| `analog-rc-filter-tool` | Python, RC cutoff, low/high-pass frequency response | Demonstrates analog electronics modeling and engineering-unit calculation. |
 | `coursework-notes` | Signal systems, optical communication, IoT, deep learning, analog circuits | Summarizes engineering foundations without exposing raw homework. |
 
 ## Repository Structure
@@ -40,6 +44,9 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 |   |-- java-student-grade-manager/
 |   |-- wireless-sensor-network-mst/
 |   |-- network-routing-dijkstra/
+|   |-- signal-fourier-lab/
+|   |-- optical-fiber-link-budget/
+|   |-- analog-rc-filter-tool/
 |   `-- coursework-notes/
 |-- docs/
 |   |-- resume-github-blurb.md
