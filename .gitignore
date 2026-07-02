@@ -1,0 +1,38 @@
+# OS/editor noise
+.DS_Store
+__MACOSX/
+._*
+.idea/
+.vscode/
+
+# Java build output
+out/
+bin/
+target/
+*.class
+query_results.tsv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+projects/wireless-sensor-network-mst/outputs/
+
+# Personal/raw coursework files
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.pdf
+*.mp4
+*.rar
+*.zip
+*202100800443*
+*student-id*
+*id-card*
+*passport*
+*signature*
+private/
+raw/
+personal/
