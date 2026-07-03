@@ -5,6 +5,7 @@
 - Java GUI project, rewritten and anonymized.
 - WSN topology/MST simulation, refactored into a reusable Python script.
 - Dijkstra routing module, added as a public extension of the WSN graph-algorithm theme.
+- ML traffic RL navigation module, rewritten as a clean public remake from a machine-learning group report and its linked public reference repository.
 - Signal/Fourier lab and optical-link model, rewritten from directly documented coursework themes.
 - RC-filter calculator, added as a public extension from analog-circuit/frequency-response coursework.
 - FPGA digital-interface lab with original Verilog modules and Python reference checks, grounded in public-safe internship learning themes.

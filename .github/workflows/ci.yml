@@ -49,6 +49,23 @@ jobs:
         working-directory: projects/network-routing-dijkstra
         run: python tests/test_dijkstra_routing.py
 
+  python-ml-traffic-rl:
+    name: Python ML traffic RL navigation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run traffic RL tests
+        working-directory: projects/ml-traffic-rl-navigation
+        run: python tests/test_traffic_rl.py
+
   python-signal-fourier:
     name: Python signal Fourier lab
     runs-on: ubuntu-latest

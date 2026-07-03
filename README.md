@@ -17,6 +17,7 @@ Every public project is tied back to coursework, internship, research, thesis, o
 - CI workflow under `.github/workflows/ci.yml` checks the Python simulations/calculators, Java project, and FPGA-interface reference models.
 - Python project includes a deterministic smoke test for graph generation and MST behavior.
 - Dijkstra routing project is a public extension of the WSN graph-algorithm theme and includes shortest-path tests for reachable, unreachable, and invalid-weight cases.
+- ML traffic navigation project includes a clean Q-learning remake derived from the machine-learning group report and public reference repository, with explicit collaboration and license boundaries.
 - Signal/Fourier, optical-link, analog-filter, thermal-control, and spectrum-allocation projects include deterministic engineering-unit tests.
 - FPGA digital-interface project includes Verilog modules plus Python behavioral checks for edge detection, display scanning, and ADC0809-style timing.
 - Java project includes Maven/JUnit tests for CSV loading and sample-data validation.
@@ -38,6 +39,7 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 | `java-student-grade-manager` | Java Swing, file parsing, GUI table query, statistics | Demonstrates object-oriented programming, desktop UI, data loading, sorting, and basic software architecture. |
 | `wireless-sensor-network-mst` | Python, NetworkX, random graph generation, minimum spanning tree | Demonstrates wireless sensor network topology modeling, graph algorithms, parameterized experiments, and visualization. |
 | `network-routing-dijkstra` | Python, Dijkstra, priority queue, shortest-path routing | Public extension of the WSN graph-algorithm theme, showing shortest-path routing in weighted sensor-style topologies. |
+| `ml-traffic-rl-navigation` | Python, Q-learning, reward design, traffic navigation | Clean public remake of the RL route-planning part of a machine-learning group project, showing prediction-driven control policy design. |
 | `signal-fourier-lab` | Python, DFT, LTI convolution, moving-average filtering | Demonstrates DSP fundamentals without relying on black-box libraries. |
 | `optical-fiber-link-budget` | Python, dB/dBm, fiber attenuation, FBG wavelength shift | Demonstrates optical communication link budgeting and sensing-model intuition. |
 | `analog-rc-filter-tool` | Python, RC cutoff, low/high-pass frequency response | Public extension from analog-circuit coursework, showing circuit-level frequency-response modeling. |
@@ -54,6 +56,7 @@ This portfolio supports applications for FPGA, hardware, embedded systems, commu
 |   |-- java-student-grade-manager/
 |   |-- wireless-sensor-network-mst/
 |   |-- network-routing-dijkstra/
+|   |-- ml-traffic-rl-navigation/
 |   |-- signal-fourier-lab/
 |   |-- optical-fiber-link-budget/
 |   |-- analog-rc-filter-tool/
